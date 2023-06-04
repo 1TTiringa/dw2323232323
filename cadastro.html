@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <h1>Informações de usuário </h1>
+
+    <div id="resultado">
+    </div>
+
+    <div class="card">
+      <label for="tarefa">Tarefa: </label>
+      <textarea id="atividades" name="atividades" required></textarea><br></br>
+
+      
+  
+      <label for="diaSemana">Dia da Semana:</label>
+      <select id="diaSemana" name="diaSemana">
+        <option value="Segunda-feira">Segunda-feira</option>
+        <option value="Terça-feira">Terca-feira</option>
+        <option value="Quarta-feira">Quarta-feira</option>
+        <option value="Quinta-feira">Quinta-feira</option>
+        <option value="Sexta-feira">Sexta-feira</option>
+      </select>
+  
+      <label for="horario">Horário:</label>
+      <input type="time" id="horario" name="horario">
+      <label for="horario"> Até </label>
+          <input type="time" id="horario" name="horario">
+  
+          <button onclick="salvarTarefa()">Salvar Tarefa</button>
+      </div>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>
